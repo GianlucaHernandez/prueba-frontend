@@ -1,5 +1,5 @@
 export const fetchRegisterUser = async (username: string, password: string) => {
-    const response = await fetch("http://localhost:3000/users/register",{
+    const response = await fetch("https://backend-sepia-nine-79.vercel.app/users/register",{
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
@@ -16,7 +16,7 @@ export const fetchRegisterUser = async (username: string, password: string) => {
 };
 
 export const fetchLoginUser = async (username: string, password: string) => {
-    const response = await fetch("http://localhost:3000/users/login",{
+    const response = await fetch("https://backend-sepia-nine-79.vercel.app/users/login",{
         method: 'POST',
         credentials: 'include',
         headers: {
